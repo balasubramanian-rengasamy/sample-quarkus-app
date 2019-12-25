@@ -8,11 +8,11 @@ import org.jetbrains.kotlin.gradle.plugin.KotlinSourceSet
 
 plugins {
     // Apply the Kotlin JVM plugin to add support for Kotlin on the JVM.
-    id("org.jetbrains.kotlin.jvm").version("1.3.31")
-    id("org.jetbrains.kotlin.plugin.allopen") version "1.3.41"
+    id("org.jetbrains.kotlin.jvm").version("1.3.61")
+    id("org.jetbrains.kotlin.plugin.allopen") version "1.3.61"
 
     java
-    id("io.quarkus") version "0.19.1"
+    id("io.quarkus") version "1.1.0.Final"
 }
 
 allOpen {
@@ -33,7 +33,7 @@ dependencies {
     // Use the Kotlin JDK 8 standard library.
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
-    implementation(enforcedPlatform("io.quarkus:quarkus-bom:0.19.1"))
+    implementation(enforcedPlatform("io.quarkus:quarkus-bom:1.1.0.Final"))
     implementation("io.quarkus:quarkus-resteasy")
 
     implementation("io.quarkus:quarkus-resteasy-jsonb")
